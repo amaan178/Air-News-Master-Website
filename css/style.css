@@ -123,6 +123,213 @@ ul.list li{
 ul.list li a:hover{
     color: var(--primary-color);
 }
+/*****************************************************************************
+                                CATEGORY CLASSES
+*****************************************************************************/
+.category{
+    display: inline-block;
+    color: #FFF;
+    font-size: .55rem;
+    text-transform: uppercase;
+    padding: .4rem .6rem;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+}
+.category-sports{
+    background: var(--category-sports);
+}
+.category-tech{
+    background: var(--category-tech);
+}
+.category-ent{
+    background: var(--category-ent);
+}
+/*****************************************************************************
+                                BUTTON CLASSES
+*****************************************************************************/
+
+.btn{
+    display: inline-block;
+    border: none;
+    background: var(--primary-color);
+    padding: .5rem 1.5rem;
+    color: #FFF;
+}
+.btn-secondary{
+    background: var(--secondary-color);
+}
+.btn-light{
+    background: var(--light-color);
+}
+.btn-dark{
+    background: var(--dark-color);
+}
+.btn-block{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    opacity: 0.9;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+/*****************************************************************************
+                                    NAVBAR
+*****************************************************************************/
+
+.navbar{
+    background: #FFF;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+    padding: 1rem 0;
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+}
+.navbar .logo{
+    width: 180px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar ul li a{
+    padding: .7rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.navbar ul li a:last-child{
+    margin-right: 0;
+}
+
+.navbar ul li a.active{
+    background: var(--primary-color);
+    color: #FFF;
+}
+.navbar .social{
+    justify-self: center;
+}
+
+.navbar .social a{
+    padding: .7rem;
+}
+
+
+
+/*****************************************************************************
+                                    SHOWCASE
+*****************************************************************************/
+
+#showcase{
+    position: relative;
+    background: var(--dark-color);
+    color: #FFF;
+    background-size: cover;
+}
+
+#showcase:before{
+    content: "";
+    background: url('../images/featured.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+
+#showcase .container{
+    min-height: 70vh;
+    padding: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase .showcase-content{
+    z-index: 1;
+}
+
+/*****************************************************************************
+                                BUTTON CLASSES
+*****************************************************************************/
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+#home-articles .articles-container .card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+#home-articles .articles-container .card-grid:first-child{
+    grid-column: 1/span 2;
+}
+#home-articles .articles-container .card-grid:last-child{
+    grid-column: 2/span 2;
+}
+
+/*****************************************************************************
+                                    FOOTER
+*****************************************************************************/
+
+
+#main-footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.footer-logo{
+    max-width: 160px;
+}
+
+#main-footer .container input[type="email"]{
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: .5rem;    
+}
+
+#main-footer .container > *:last-child{
+    background: #444;
+    grid-column: 1/span 4;
+    text-align: center;
+    padding: .5rem;
+    font-size: .75rem;
+}
+#main-footer .container > *:last-child p{
+    margin: 0;
+}
+
+
+/*****************************************************************************
+                                    About Page
+*****************************************************************************/
+.page-content{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+}
+.page-content>*:first-child{
+    grid-row: 1/span 3;
+}
+
 
 
 
